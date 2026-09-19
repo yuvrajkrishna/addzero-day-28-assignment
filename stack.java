@@ -11,6 +11,7 @@ public class stack{
         top = pop(stack, top);
         System.out.println(peek(stack, top));
         System.out.println(isEmpty(top));
+        System.out.println(size(top));
     }
     public static int push(int stack [] , int top , int value){
         if(top == stack.length-1){
@@ -34,5 +35,8 @@ public class stack{
             return true;
         }
         return false;
+    }
+    public static int size (int top){
+        return top+1;
     }
 }
